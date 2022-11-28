@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+$font-main: "Outfit", sans-serif;
+$font-regular: 400;
+$font-bold: 700;
+$font-size: 15px;
+$primary-color: #fb7718;
+$neutral-whiter: #ffffff;
+$light-grey: #959eac;
+$medium-grey: #7c8798;
+$dark-blue: #252d37;
+$very-dark-blue: #121417;
+
+$mobile-width:375px;
+$desktop-width:1440px;
+
+body{
+    font-family: $font-main;
+    font-weight: $font-regular;
+    background-color: $very-dark-blue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
