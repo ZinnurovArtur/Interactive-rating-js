@@ -10,14 +10,34 @@ $medium-grey: #7c8798;
 $dark-blue: #252d37;
 $very-dark-blue: #121417;
 
-$mobile-width:375px;
-$desktop-width:1440px;
+$mobile-width: 375px;
+$desktop-width: 1440px;
 
-body{
-    font-family: $font-main;
-    font-weight: $font-regular;
-    background-color: $very-dark-blue;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+body {
+  min-height: 100vh;
+  font-family: $font-main;
+  font-weight: $font-regular;
+  background-color: $very-dark-blue;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-weight: $font-bold;
+  color: #ffffff;
+  text-align: left;
+}
+
+@mixin mobile {
+  @media (min-width:#{$mobile-width}) and (max-width:#{$desktop-width-1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width:#{$desktop-width}) {
+    @content;
+  }
 }

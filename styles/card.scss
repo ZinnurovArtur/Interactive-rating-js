@@ -1,0 +1,25 @@
+@use "styles";
+.card-container {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: styles.$dark-blue;
+    border-radius: 1rem;
+
+    .card-body {
+      flex: 1;
+      padding: 2rem;
+     
+    }
+    .card-p {
+      text-align: center;
+      color: #7c8798;
+      font-size: styles.$font-size;
+      margin-top: -2rem;
+      line-height: 1.7;
+      font-weight: styles.$font-regular;
+      white-space: pre-line;
+    }
+  }
+}

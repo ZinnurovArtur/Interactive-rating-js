@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 body {
+  min-height: 100vh;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   background-color: #121417;
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  color: #ffffff;
+  text-align: left;
 }/*# sourceMappingURL=styles.css.map */
