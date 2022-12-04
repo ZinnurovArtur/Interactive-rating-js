@@ -1,5 +1,6 @@
 @use "styles";
 .card-container {
+
   .card {
     display: flex;
     flex-direction: column;
@@ -7,11 +8,26 @@
     background-color: styles.$dark-blue;
     border-radius: 1rem;
 
+    .card-title{
+        word-spacing: 3px;
+    }
+
     .card-body {
       flex: 1;
       padding: 2rem;
-     
+      svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 16px;
+        height: 17px;
+        padding: 8px;
+        background-color: #383d44;
+        color: styles.$light-grey;
+      }
     }
+
     .card-p {
       text-align: center;
       color: #7c8798;
@@ -20,6 +36,27 @@
       line-height: 1.7;
       font-weight: styles.$font-regular;
       white-space: pre-line;
+    }
+    .row-numbers {
+      display: flex;
+      justify-content: space-between;
+    }
+    .circle-number {
+      input {
+       opacity: 0;
+      }
+      label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+        background-color: #383d44;
+        color: styles.$light-grey;
+       
+      }
     }
   }
 }
