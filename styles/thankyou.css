@@ -107,4 +107,21 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.score .selected {
+  border-radius: 25px;
+  padding: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 1rem;
+  background-color: #383d44;
+  color: #fa7617;
 }/*# sourceMappingURL=thankyou.css.map */
