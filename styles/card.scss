@@ -55,6 +55,14 @@
         background-color: #383d44;
         color: styles.$light-grey;
       }
+      label:hover {
+        background-color: styles.$primary-color;
+        color: white;
+      }
+      input:checked + label {
+        background-color: styles.$primary-color;
+        color: white;
+      }
     }
     .submit-function {
       margin-top: 1rem;
@@ -71,7 +79,7 @@
         padding: 9px;
         border-radius: 30px;
         width: 100%;
-        border: 1px solid styles.$primary-color
+        border: 1px solid styles.$primary-color;
       }
     }
   }

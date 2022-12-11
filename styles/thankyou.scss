@@ -1,0 +1,17 @@
+@use "styles";
+@use "card";
+
+.card-title-thanks {
+  @extend .card-title;
+  text-align: center;
+}
+
+.card-body-thanks {
+  flex: 1;
+  padding: 2rem;
+  .picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

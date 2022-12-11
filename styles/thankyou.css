@@ -23,7 +23,7 @@ h2 {
   background-color: #252d37;
   border-radius: 1rem;
 }
-.card-container .card .card-title {
+.card-container .card .card-title, .card-container .card .card-title-thanks {
   word-spacing: 3px;
 }
 .card-container .card .card-body {
@@ -93,4 +93,18 @@ h2 {
   border-radius: 30px;
   width: 100%;
   border: 1px solid #fa7617;
-}/*# sourceMappingURL=card.css.map */
+}
+
+.card-title-thanks {
+  text-align: center;
+}
+
+.card-body-thanks {
+  flex: 1;
+  padding: 2rem;
+}
+.card-body-thanks .picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=thankyou.css.map */
