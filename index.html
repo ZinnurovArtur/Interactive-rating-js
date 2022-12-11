@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/card.css" />
     <link rel="stylesheet" href="./styles/thankyou.css" />
+
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
     <!-- Rating state start -->
-    <div class="card-container">
+    <div class="card-container" id="maincard">
       <div class="card">
         <div class="card-body">
           <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +33,7 @@
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-          <form class="rating">
+          <form class="rating" id="theForm">
             <div class="row-numbers">
               <div class="circle-number" id="numberOne">
                 <input
@@ -86,7 +87,9 @@
               </div>
             </div>
             <div class="submit-function">
-              <button class="submit-button">Submit</button>
+              <button type="submit" id="submitbutton" class="submit-button">
+                Submit
+              </button>
             </div>
           </form>
         </div>
@@ -100,7 +103,7 @@
       </div>
     </div>
 
-    <div class="card-container">
+    <div class="card-container" style="display: none" id="thankscard">
       <div class="card">
         <div class="card-body-thanks">
           <div class="picture">
@@ -196,7 +199,7 @@
           </div>
 
           <div class="score">
-            <div class="selected">You selected 4 of 5</div>
+            <div class="selected">You selected <span id="num"></span> of 5</div>
           </div>
 
           <h2 class="card-title-thanks">Thank you!</h2>
@@ -214,5 +217,6 @@
         >. Coded by <a href="#">Arthur Zinnurov</a>.
       </div>
     </div>
+    <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>
